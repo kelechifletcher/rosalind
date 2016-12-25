@@ -1,0 +1,47 @@
+"""
+title: Counting DNA Nucleotides (ROSALIND: Bioinformatics Stronghold)
+author: Kelechi K. Fletcher
+date: 12.25.2016
+"""
+
+
+def main():
+    """
+    main
+        Calculates number of nucleotides and generates report.
+
+    :return: 0
+    """
+
+    # Open input and output files
+    in_file = open('../in/rosalind_dna.txt', 'r')
+    out_file = open('../out/rosalind_dna_solution.txt', 'w')
+
+    # Read in DNA sequence
+    dna = in_file.readline()
+    a, c, g, t = 0, 0, 0, 0
+
+    # Count nucleotides
+    for base in dna.lower():
+        if base == 'a':
+            a += 1
+        elif base == 'c':
+            c += 1
+        elif base == 'g':
+            g += 1
+        elif base == 't':
+            t += 1
+
+    # Write to output file and standard out
+    out_file.write('%i %i %i %i' % (a, c, g, t))
+    print('%i %i %i %i' % (a, c, g, t))
+
+    # Close input and output files
+    in_file.close()
+    out_file.close()
+
+    return 0
+
+
+if __name__ == '__main__':
+    main()
