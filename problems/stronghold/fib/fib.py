@@ -1,5 +1,6 @@
 """
-title: Rabbits and Recurrence Relations (ROSALIND: Bioinformatics Stronghold)
+title: Rabbits and Recurrence Relations
+description: ROSALIND, Bioinformatics Stronghold
 author: Kelechi K. Fletcher
 date: 12.25.2016
 """
@@ -16,18 +17,23 @@ def fib(n, k):
     :return: total number of rabbits
     """
 
+    # Base case: one month, one rabbit
     if n == 1:
         return 1
 
+    # Base case: two months, k rabbits
     elif n == 2:
         return k
 
+    # fibonacci, f1 and f2 generations
     f1 = fib(n-1, k)
     f2 = fib(n-2, k)
 
+    # Base case: less than four months, f1 + f2 rabbits
     if n <= 4:
         return f1 + f2
 
+    # Return fibonacci f1 + (f2*k)
     return f1 + (f2 * k)
 
 
@@ -39,17 +45,26 @@ def main():
     :return: 0
     """
 
-    inFile = open('../in/rosalind_fib.txt', 'r')
-    outFile = open('../out/rosalind_fib_solution.txt', 'w')
+    # Open input and output files
+    in_file = open('../in/rosalind_fib.txt', 'r')
+    out_file = open('../out/rosalind_fib_solution.txt', 'w')
 
-    data = inFile.readline().split(' ')
+    # Read in data
+    data = in_file.readline().split(' ')
 
+    # Calculate total from fibonacci sequence
     total = fib(int(data[0]), int(data[1]))
 
-    outFile.write(str(total))
+    # Write to output file and standard out
+    out_file.write(str(total))
     print(total)
 
+    # Close input and output files
+    in_file.close()
+    out_file.close()
+
     return 0
+
 
 if __name__ == '__main__':
     main()

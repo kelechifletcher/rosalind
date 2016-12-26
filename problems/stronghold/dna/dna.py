@@ -1,5 +1,6 @@
 """
-title: Counting DNA Nucleotides (ROSALIND: Bioinformatics Stronghold)
+title: Counting DNA Nucleotides
+description: ROSALIND, Bioinformatics Stronghold
 author: Kelechi K. Fletcher
 date: 12.25.2016
 """
@@ -22,14 +23,14 @@ def main():
     a, c, g, t = 0, 0, 0, 0
 
     # Count nucleotides
-    for base in dna.lower():
-        if base == 'a':
+    for base in dna:
+        if base == 'A':
             a += 1
-        elif base == 'c':
+        elif base == 'C':
             c += 1
-        elif base == 'g':
+        elif base == 'G':
             g += 1
-        elif base == 't':
+        elif base == 'T':
             t += 1
 
     # Write to output file and standard out

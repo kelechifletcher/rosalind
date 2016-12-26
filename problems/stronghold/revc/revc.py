@@ -1,28 +1,43 @@
-import sys
+"""
+title: Complementing a Strand of DNA
+description: ROSALIND, Bioinformatics Stronghold
+author: Kelechi K. Fletcher
+date: 12.25.2016
+"""
 
 
 def main():
-    dna = sys.stdin.readline()
-    r_dna = dna[::-1]
-    com = str()
+    """
+    main
+        Calculates the reverse complement strand of given dna sequence
 
-    for base in r_dna:
+    :return: 0
+    """
+
+    in_file = open('../in/rosalind_revc.txt', 'r')
+    out_file = open('../in/rosalind_revc_solution.txt', 'w')
+
+    dna = in_file.readline()
+    complement = str()
+
+    for base in dna[::-1]:
         if base == 'A':
-            com += 'T'
-
+            complement += 'T'
         elif base == 'C':
-            com += 'G'
-
+            complement += 'G'
         elif base == 'G':
-            com += 'C'
-
+            complement += 'C'
         elif base == 'T':
-            com += 'A'
+            complement += 'A'
 
-    print(com)
+    out_file.write(complement)
+    print(complement)
 
-    out = open('.\out\solution.txt', 'w+')
-    out.write(com)
+    in_file.close()
+    out_file.close()
+
+    return 0
+
 
 if __name__ == '__main__':
     main()
