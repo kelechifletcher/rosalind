@@ -5,6 +5,11 @@ Solution scripts for ROSALIND problem sets. Implemented in Python 3.5.
 Project is organized as follows
 ```
 rosalind/
-    armory/
-    stronghold/
+    problems/
+        armory/         (Bioinformatics Armory Problem Set)
+        stronghold/     (Bioinformatics Stronghold Problem Set)
+            scripts/    (solution scripts)
+                ...
+            test/       (test cases)
+                ...
 ```
