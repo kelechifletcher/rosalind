@@ -3,7 +3,7 @@ Rosalind is a platform for learning bioinformatics and programming through probl
 These are my solution scripts for ROSALIND problem sets. Implemented in Python 3.5.
 
 ## Overview
-Project is organized as follows
+Project is organized as follows:
 ```
 rosalind/
     problems/
