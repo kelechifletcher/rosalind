@@ -6,11 +6,10 @@ Project is organized as follows
 ```
 rosalind/
     problems/
-        armory/         (Bioinformatics Armory Problem Set)
-            ...
         stronghold/     (Bioinformatics Stronghold Problem Set)
             scripts/    (solution scripts)
                 ...
             test/       (test cases)
-                ...
+                in/     (input)
+                out/    (output)
 ```
