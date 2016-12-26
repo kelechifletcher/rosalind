@@ -14,8 +14,8 @@ def main():
     :return: 0
     """
 
-    in_file = open('../test/in/rosalind_rna.txt', 'r')
-    out_file = open('../test/out/rosalind_rna_solution.txt', 'w')
+    in_file = open('../../test/in/rosalind_rna.txt', 'r')
+    out_file = open('../../test/out/rosalind_rna_solution.txt', 'w')
 
     dna = in_file.readline()
     rna = dna.replace('T', 'U')

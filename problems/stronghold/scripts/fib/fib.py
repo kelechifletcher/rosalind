@@ -46,8 +46,8 @@ def main():
     """
 
     # Open input and output files
-    in_file = open('../test/in/rosalind_fib.txt', 'r')
-    out_file = open('../test/out/rosalind_fib_solution.txt', 'w')
+    in_file = open('../../test/in/rosalind_fib.txt', 'r')
+    out_file = open('../../test/out/rosalind_fib_solution.txt', 'w')
 
     # Read in data
     data = in_file.readline().split(' ')

@@ -28,8 +28,8 @@ def main():
     :return:
     """
 
-    seq_dict = Fasta('../test/in/rosalind_gc.txt')
-    out_file = open('../test/out/rosalind_gc_solution.txt', 'w')
+    seq_dict = Fasta('../../test/in/rosalind_gc.txt')
+    out_file = open('../../test/out/rosalind_gc_solution.txt', 'w')
     max_id = ''
     max_gc = 0.0
 
