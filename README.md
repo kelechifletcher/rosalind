@@ -6,10 +6,12 @@ Project is organized as follows
 ```
 rosalind/
     problems/
-        stronghold/     (Bioinformatics Stronghold Problem Set)
+        stronghold/     (Bioinformatics Stronghold problem set)
             scripts/    (solution scripts)
                 ...
             test/       (test cases)
                 in/     (input)
+                    ...
                 out/    (output)
+                    ...
 ```
