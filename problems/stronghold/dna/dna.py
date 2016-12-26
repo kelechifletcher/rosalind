@@ -15,8 +15,8 @@ def main():
     """
 
     # Open input and output files
-    in_file = open('../in/rosalind_dna.txt', 'r')
-    out_file = open('../out/rosalind_dna_solution.txt', 'w')
+    in_file = open('../test/in/rosalind_dna.txt', 'r')
+    out_file = open('../test/out/rosalind_dna_solution.txt', 'w')
 
     # Read in DNA sequence
     dna = in_file.readline()

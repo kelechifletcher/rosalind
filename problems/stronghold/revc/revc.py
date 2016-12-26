@@ -14,8 +14,8 @@ def main():
     :return: 0
     """
 
-    in_file = open('../in/rosalind_revc.txt', 'r')
-    out_file = open('../in/rosalind_revc_solution.txt', 'w')
+    in_file = open('../test/in/rosalind_revc.txt', 'r')
+    out_file = open('../test/out/rosalind_revc_solution.txt', 'w')
 
     dna = in_file.readline()
     complement = str()
