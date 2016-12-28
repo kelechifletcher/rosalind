@@ -1,6 +1,6 @@
 """
 title: Counting Point Mutations
-description: ROSALIND, Bioinformatis Stronghold
+description: ROSALIND, Bioinformatics Stronghold
 author: Kelechi K. Fletcher
 date: 12.25.2016
 """
