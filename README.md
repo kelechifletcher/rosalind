@@ -6,6 +6,7 @@ These are my solution scripts for ROSALIND problem sets. Implemented in Python 3
 Project is organized as follows:
 ```
 rosalind/
+    README.md
     problems/
         stronghold/     (Bioinformatics Stronghold problem set)
             scripts/    (solution scripts)
